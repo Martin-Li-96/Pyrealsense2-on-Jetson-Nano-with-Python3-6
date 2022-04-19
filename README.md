@@ -7,7 +7,7 @@ The Intel SDK version is 2.50.0
 2. Download the "librealsense" at https://github.com/IntelRealSense/librealsense/releases/
 3. sudo apt install libssl-dev (ubuntu) or yum install openssl-devel (Centos && RHEL)
 4. Go to the root directory of the librealsense. "cd XXX/librealsense".
-5. Edit the CMakeLists.txt in order to use CUDA. Open this file, and add "set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)" in below 
+5. Edit the CMakeLists.txt in order to use CUDA. Open this file, and add "set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)"  below 
    "cmake_minimum_required(VERSION 3.1.0)".
 5. sudo mkdir build && cd build
 6. cmake ../ -DFORCE_RSUSB_BACKEND=ON -DBUILD_PYTHON_BINDINGS:bool=true -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCMAKE_BUILD_TYPE=release -DBUILD_EXAMPLES=true -DBUILD_GRAPHICAL_EXAMPLES=true -DBUILD_WITH_CUDA:bool=true
